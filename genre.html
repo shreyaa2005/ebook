@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genre</title>
+    <link rel="stylesheet" href="genre.css">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/012/242/058/non_2x/spz-letter-logo-design-with-white-background-in-illustrator-logo-calligraphy-designs-for-logo-poster-invitation-etc-vector.jpg">
+    <style>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("https://png.pngtree.com/thumb_back/fw800/background/20220730/pngtree-blue-blur-background-hd-image_1440277.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding-top: 70px;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0f0f0f; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+.login-btn {
+    padding: 8px 15px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right:70px;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.login-btn:hover {
+    background: #c0392b;
+}
+
+/* Book Container */
+.container {
+    display: flex;
+    justify-content: center; /* Align books to the center */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 20px; /* Add space between books */
+    padding: 20px;
+    margin-top: 80px; /* Ensure it doesn't overlap the header */
+    text-decoration:none;
+}
+
+/* Book Card */
+.book {
+    flex: 0 0 auto; /* Prevent books from stretching */
+    width: 220px; /* Adjust width */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.book a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    width: 100%;
+    border-radius: 8px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.book h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #e74c3c;
+}
+</style>
+</head>
+
+    
+
+<body>
+    <header>
+        <div class="logo">SPZ</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="genre.html">Genres</a></li>
+                <li><a href="library.html">My Library</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+        <a href="sep log.html"><button class="login-btn">Login</button></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="book">
+            <a href="romance.html">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.6fH4fmVcCwQhCgw4nglcogHaEK&pid=Api&P=0&h=220.jpg" alt="Romance">
+            <h3>ROMANCE</h3>
+            
+        </div>
+        <div class="book">
+            <a href="fantasy.html">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.naiSo-P8WYauqyIZIpDxRAHaEo&pid=Api&P=0&h=220.jpg" alt="Fantasy">
+            <h3>FANTASY</h3>
+
+        </div>
+        <div class="book">
+            <a href="mystery.html">
+            <img src="https://gobookmart.com/wp-content/uploads/2023/03/15-Murder-Mystery-Comics-We-Recommend.jpg" alt="Mystery">
+            <h3>MYSTERY</h3>
+
+        </div>
+        <div class="book">
+            <a href="fiction.html">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.8H2TdK82b6FfidSBXAMtKwHaEK&pid=Api&P=0&h=220.jpg" alt="Fiction">
+            <h3>FICTION</h3>
+            
+        </div>
+
+         <div class="book">
+            <a href="science.html">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.-x-fkVf2Jfnn8k5PvAMx4QHaE8&pid=Api&P=0&h=220.jpg" alt="Science">
+            <h3>SCIENCE</h3>
+            
+        </div>
+    </div>
+</body>
+</html>

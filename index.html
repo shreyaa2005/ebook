@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPZ - Book Platform</title>
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/012/242/058/non_2x/spz-letter-logo-design-with-white-background-in-illustrator-logo-calligraphy-designs-for-logo-poster-invitation-etc-vector.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #000000;
+            color: #f1f1f1;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #0f0f0f; /* Darker Black */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #f1f1f1;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #e74c3c;
+        }
+        .login-btn {
+            padding: 8px 15px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+            margin-right:70px;
+        }
+        .login-btn:hover {
+            background: #c0392b;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 120px 50px 50px;
+        }
+        .hero-text {
+            width: 50%;
+        }
+        .hero-text h1 {
+            font-size: 40px;
+            color: #ffffff;
+        }
+        .hero-text p {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #b2becd;
+        }
+        .hero-img img {
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        .btn {
+            padding: 10px 20px;
+            background: #e74c3c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        .btn:hover {
+            background: #c0392b;
+        }
+        .genres {
+            text-align: center;
+            padding: 50px;
+        }
+        .genres h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .genre-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .genre-list a {
+            text-decoration: none; 
+        }
+
+        .genre {
+            background: #1a1a1a;
+            padding: 15px 25px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            font-size: 18px;
+            cursor: pointer;
+            color: #ffffff;
+            transition: 0.3s;
+        }
+        .genre:hover {
+            background: #e74c3c;
+            color: white;
+        }
+        .highlighted-books {
+            text-align: center;
+            padding: 50px;
+        }
+        .highlighted-books h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .book-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .book {
+            background: #1a1a1a;
+            margin: 15px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+        .book img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .book h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #ffffff;
+        }
+        .info-boxes {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            gap: 20px;
+        }
+        .info-box {
+            width: 300px;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+        .info-box h3 {
+            margin-bottom: 10px;
+            color: #e74c3c;
+        }
+        .info-box p {
+            color: #b2becd;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0f0f0f;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SPZ</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="genre.html">Genres</a></li>
+                <li><a href="library.html">My Library</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+        <a href="sep log.html"><button class="login-btn">Login</button></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Explore the World of Books</h1>
+            <p>Discover and read thousands of books from various genres, authors, and topics.</p>
+            <a href="sep log.html"><button class="btn">Get Started</button></a>
+        </div>
+        <div class="hero-img">
+            <img src="http://mona.media/wp-content/uploads/2021/11/content-ebook.png" alt="Books">
+        </div>
+    </section>
+
+    <section class="genres">
+        <h2>Popular Genres</h2>
+        <div class="genre-list">
+            <div class="genre-list">
+    <a href="fiction.html"><div class="genre">Fiction</div></a>
+    <a href="mystery.html"><div class="genre">Mystery</div></a>
+    <a href="science.html"><div class="genre">Science</div></a>
+    <a href="fantasy.html"><div class="genre">Fantasy</div></a>
+    <a href="romance.html"><div class="genre">Romance</div></a>
+</div>
+
+        </div>
+    </section>
+
+    <section class="info-boxes">
+        <div class="info-box">
+            <h3>Read Anywhere</h3>
+            <p>Access your library from any device.</p>
+        </div>
+        <div class="info-box">
+            <h3>Wide Collection</h3>
+            <p>Thousands of books in various categories.</p>
+        </div>
+        <div class="info-box">
+            <h3>Free to Use</h3>
+            <p>Completely free and accessible for all users.</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 BookHub. All rights reserved.
+    </footer>
+</body>
+</html>
